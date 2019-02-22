@@ -34,7 +34,7 @@ COPY --from=0 /code/zenroom/examples/elgamal  /opt/contracts/
 
 RUN easy_install pip
 
-WORKDIR /app/chainspace-syustem-test
+WORKDIR /app/chainspace-system-test
 
 RUN virtualenv .chainspace.env
 RUN . .chainspace.env/bin/activate && pip install -U setuptools
